@@ -1,6 +1,14 @@
 # PubSub Emulator
 
-A Dockerized version of the official GCP Pub/Sub Emulator provided in the gcloud SDK. The image is meant to be used for creating an standalone emulator for testing.
+A Dockerized version of the official GCP Pub/Sub Emulator provided in the `gcloud` SDK. The image is meant to be used for creating an standalone emulator for testing.
+
+## Docker
+
+Run via Docker
+
+```
+docker run samcfinan/gcp-pubsub-emulator -e PUBSUB_LISTEN_ADDRESS=<address> -e PUBSUB_PROJECT_ID=<projectID>
+```
 
 ## Environment
 
